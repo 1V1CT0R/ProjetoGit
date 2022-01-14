@@ -19,7 +19,7 @@ def caesar(frase,posição,método):
             else:
                 novo_índice = índice - posição
             novo_índice = novo_índice % len(alfabeto)
-            nova_frase+=alfabeto[novo_índice]
+            nova_frase+=alfabeto[novo_índice:novo_índice+1]
     return nova_frase
 
 print(caesar("Olá Mundo!",3,1))
